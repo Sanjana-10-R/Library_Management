@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head><title>Add Book</title></head>
+<body>
+
+<h3>Add Book</h3>
+
+<form method="post" action="MainServlet">
+
+ISBN<br>
+<input type="text" name="isbn" required><br><br>
+
+Book Name<br>
+<input type="text" name="bookName" required><br><br>
+
+Book Type<br>
+<select name="bookType" required>
+<option value="G">General</option>
+<option value="T">Technical</option>
+</select><br><br>
+
+Author Name<br>
+<select name="authorCode" required>
+<option value="1">RobinSharma</option>
+<option value="2">R.K.Narayan</option>
+<option value="3">PauloCoelho</option>
+</select><br><br>
+
+Book Cost<br>
+<input type="number" name="cost" required><br><br>
+
+<input type="submit" name="operation" value="AddBook">
+</form>
+
+</body>
+</html>
